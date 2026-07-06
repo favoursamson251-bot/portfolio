@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev SaFaNa — Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <div class="logo">Dev SaFaNa<span class="dot">.</span></div>
+    <nav>
+      <ul>
+        <li><a href="#cases">Cases</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+      </ul>
+    </nav>
+    <a href="#contact" class="nav-cta">Say hi →</a>
+    <button class="nav-toggle" aria-label="Open menu">☰</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">AVAILABLE FOR WORK</span>
+      <h1>Building interfaces<br>that feel <span>fast</span> and<br>look intentional.</h1>
+      <p class="lead">I'm Dev SaFaNa, a frontend developer turning designs into clean, responsive, production-ready interfaces,one component at a time.</p>
+      <div class="hero-actions">
+        <a href="#cases" class="btn btn-primary">View my work</a>
+        <a href="#contact" class="btn btn-ghost">Let's talk</a>
+      </div>
+    </div>
+    <div class="editor reveal">
+      <div class="editor-bar">
+        <span class="editor-dot"></span><span class="editor-dot"></span><span class="editor-dot"></span>
+        <span class="editor-tab">developer.js</span>
+      </div>
+      <div class="editor-body" id="typedCode"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CASES -->
+<section id="cases">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="section-tag"> Selected-work</span>
+        <h2>Recent cases</h2>
+      </div>
+    </div>
+    <div class="cases-grid">
+      <div class="case-card reveal">
+        <div class="case-thumb"></div>
+        <h3>Horizon Analytics Dashboard</h3>
+        <p class="case-desc">A SaaS dashboard rebuilt for speed — cut initial load time and made charts render instantly on filter change.</p>
+        <div class="tags"><span class="tag">React</span><span class="tag">Tailwind</span><span class="tag">Chart.js</span></div>
+      </div>
+      <div class="case-card reveal">
+        <div class="case-thumb"></div>
+        <h3>Nomad Studio Portfolio</h3>
+        <p class="case-desc">A photographer's portfolio site with image-heavy pages that still load fast and feel smooth on mobile.</p>
+        <div class="tags"><span class="tag">Next.js</span><span class="tag">Framer Motion</span></div>
+      </div>
+      <div class="case-card reveal">
+        <div class="case-thumb"></div>
+        <h3>Fintrack Landing Page</h3>
+        <p class="case-desc">A conversion-focused product landing page with scroll animations built without a heavy framework.</p>
+        <div class="tags"><span class="tag">HTML/CSS</span><span class="tag">GSAP</span><span class="tag">JS</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="reveal">
+
+      <h2 style="font-size:clamp(26px,4vw,38px);margin-bottom:24px;">A frontend developer who cares about the small details.</h2>
+      <p>I'm Dev SaFaNa, a frontend developer with 1 year 3 months of hands-on experience turning designs into interfaces that hold up in the real world — across screen sizes, slow connections, and edge cases.</p>
+      <p>I focus on writing clean, maintainable code and closing the gap between a design file and a finished product — matching spacing, motion, and detail so nothing gets lost in the build.</p>
+    </div>
+    <div class="stat-list reveal">
+      <div class="stat"><span class="num">1.3</span><span class="label">Years of experience</span></div>
+      <div class="stat"><span class="num">10+</span><span class="label">Projects shipped</span></div>
+      <div class="stat"><span class="num">100</span><span class="label">Lighthouse scores chased</span></div>
+      <div class="stat"><span class="num">3</span><span class="label">Frameworks comfortable in</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <h2>Services</h2>
+      </div>
+    </div>
+    <div class="services-list reveal">
+      <div class="service-row">
+        <span class="service-num">01</span>
+        <div><h3>Web Design</h3><p class="service-desc">Clean, modern layouts designed directly in the browser.</p></div>
+        <span class="arrow">→</span>
+      </div>
+      <div class="service-row">
+        <span class="service-num">02</span>
+        <div><h3>Frontend Development</h3><p class="service-desc">Turning designs (Figma or otherwise) into responsive, production-ready code.</p></div>
+        <span class="arrow">→</span>
+      </div>
+      <div class="service-row">
+        <span class="service-num">03</span>
+        <div><h3>Landing Pages</h3><p class="service-desc">Fast, conversion-focused single pages for products and launches.</p></div>
+        <span class="arrow">→</span>
+      </div>
+      <div class="service-row">
+        <span class="service-num">04</span>
+        <div><h3>Website Maintenance</h3><p class="service-desc">Bug fixes, performance passes, and small feature additions on existing sites.</p></div>
+        <span class="arrow">→</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="section-tag">// experience</span>
+        <h2>Experience</h2>
+      </div>
+      <p>Edit this with your real role, company name and responsibilities.</p>
+    </div>
+    <div class="timeline reveal">
+      <div class="timeline-item">
+        <span class="period">Apr 2025 — Present · 1 yr 3 mo</span>
+        <h3>Frontend Developer</h3>
+        <p class="company">Company Name — Remote</p>
+        <ul>
+          <li>Built and maintained responsive UI components across multiple products</li>
+          <li>Collaborated with designers to translate Figma files into pixel-accurate code</li>
+          <li>Improved page load performance and fixed cross-browser issues</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="section-tag">// testimonials</span>
+        <h2>What people say</h2>
+      </div>
+      <p>Placeholder reviews — swap in real client or teammate feedback.</p>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card reveal">
+        <div class="stars">★★★★★</div>
+        <p class="quote">Delivered clean, well-structured code and communicated clearly the whole way through.</p>
+        <div class="reviewer"><div class="avatar">A</div><div><div class="name">Amara O.</div><div class="role">Product Manager</div></div></div>
+      </div>
+      <div class="review-card reveal">
+        <div class="stars">★★★★★</div>
+        <p class="quote">Turned our design file into a site that looked exactly right on every device we tested.</p>
+        <div class="reviewer"><div class="avatar">T</div><div><div class="name">Tunde A.</div><div class="role">Founder, Startup</div></div></div>
+      </div>
+      <div class="review-card reveal">
+        <div class="stars">★★★★★</div>
+        <p class="quote">Reliable, detail-oriented, and easy to work with — would bring on again for future work.</p>
+        <div class="reviewer"><div class="avatar">C</div><div><div class="name">Chidi N.</div><div class="role">Design Lead</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT / FOOTER -->
+<footer class="contact" id="contact">
+  <div class="contact-panel">
+    <div>
+      <h2>Let's build something<br>great together.</h2>
+      <p>Feel free to reach out if you'd like to work together, or just want to say hi:</p>
+      <a href="mailto:favoursamson251@gmail.com" class="contact-email">favoursamson251@gmail.com ↗</a>
+    </div>
+    <ul class="footer-links">
+      <li><a href="#cases">Cases</a></li>
+      <li><a href="#about">About me</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+    </ul>
+    <div class="social-list">
+      <a href="#" class="social-btn" id="social-github" target="_blank" rel="noopener">GitHub</a>
+      <a href="#" class="social-btn" id="social-telegram" target="_blank" rel="noopener">Telegram</a>
+      <a href="#" class="social-btn" id="social-whatsapp" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="#" class="social-btn" id="social-linkedin" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <div class="legal">
+      <a href="#">Terms of Use</a>
+      <a href="#">Privacy Policy</a>
+      <div class="copyright">© 2026 Dev SaFaNa. All rights reserved.</div>
+    </div>
+    <div class="footer-logo">SaFaNa<span class="dot">.</span></div>
+  </div>
+  <div class="contact-visual">
+    <div class="terminal-float">
+      <div class="editor-bar">
+        <span class="editor-dot"></span><span class="editor-dot"></span><span class="editor-dot"></span>
+        <span class="editor-tab">say-hi.js</span>
+      </div>
+      <div class="editor-body">
+        <div class="big-line">Let's<br>work <span class="accent">together</span></div>
+        <div class="terminal-sub">// drop me a line →</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // ====== EDIT YOUR LINKS HERE ======
+  const SOCIAL_LINKS = {
+    github:   "https://github.com/favoursamson251-bot",
+    telegram: "https://t.me/your-username",
+    whatsapp: "https://wa.me/2348138743193",
+    linkedin: "https://linkedin.com/in/your-username"
+  };
+  Object.entries(SOCIAL_LINKS).forEach(([key, url])=>{
+    const el = document.getElementById('social-' + key);
+    if(el) el.href = url;
+  });
+  // ===================================
+
+  // typing effect for hero code block
+  const codeLines = [
+    {ln:1, html:'<span class="key">const</span> <span class="var">dev</span> = {'},
+    {ln:2, html:'&nbsp;&nbsp;<span class="prop">name</span>: <span class="str">"Dev SaFaNa"</span>,'},
+    {ln:3, html:'&nbsp;&nbsp;<span class="prop">role</span>: <span class="str">"Frontend Developer"</span>,'},
+    {ln:4, html:'&nbsp;&nbsp;<span class="prop">experience</span>: <span class="str">"1yr 3mo"</span>,'},
+    {ln:5, html:'&nbsp;&nbsp;<span class="prop">focus</span>: <span class="str">"clean UI, fast code"</span>'},
+    {ln:6, html:'};'},
+    {ln:7, html:'<span class="fn">dev</span>.<span class="fn">buildSomethingGreat</span>();'}
+  ];
+
+  const container = document.getElementById('typedCode');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function renderLine(i){
+    if(i >= codeLines.length){
+      const c = document.createElement('span');
+      c.className='cursor';
+      container.appendChild(c);
+      return;
+    }
+    const row = document.createElement('div');
+    row.innerHTML = `<span class="ln">${codeLines[i].ln}</span>${codeLines[i].html}`;
+    container.appendChild(row);
+    setTimeout(()=>renderLine(i+1), 220);
+  }
+
+  if(reduceMotion){
+    codeLines.forEach(l=>{
+      const row = document.createElement('div');
+      row.innerHTML = `<span class="ln">${l.ln}</span>${l.html}`;
+      container.appendChild(row);
+    });
+  } else {
+    renderLine(0);
+  }
+
+  // scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, {threshold:0.15});
+  revealEls.forEach(el=>io.observe(el));
+</script>
+
+</body>
+</html>
+    
+</body>
+</html>
