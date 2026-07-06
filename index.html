@@ -21,9 +21,9 @@
         <li><a href="#experience">Experience</a></li>
         <li><a href="#reviews">Reviews</a></li>
       </ul>
-       <div class="menu-btn">&#9776;</div>
     </nav>
     <a href="#contact" class="nav-cta">Say hi →</a>
+    <button class="nav-toggle" aria-label="Open menu">☰</button>
   </div>
 </header>
 
@@ -62,7 +62,7 @@
       <div class="case-card reveal">
         <div class="case-thumb"></div>
         <h3>Horizon Analytics Dashboard</h3>
-        <p class="case-desc">A SaaS dashboard rebuilt for speed, cut initial load time and made charts render instantly on filter change.</p>
+        <p class="case-desc">A SaaS dashboard rebuilt for speed — cut initial load time and made charts render instantly on filter change.</p>
         <div class="tags"><span class="tag">React</span><span class="tag">Tailwind</span><span class="tag">Chart.js</span></div>
       </div>
       <div class="case-card reveal">
@@ -87,7 +87,7 @@
     <div class="reveal">
 
       <h2 style="font-size:clamp(26px,4vw,38px);margin-bottom:24px;">A frontend developer who cares about the small details.</h2>
-      <p>I'm Dev SaFaNa, a frontend developer with 3 months of hands-on experience turning designs into interfaces that hold up in the real world,across screen sizes, slow connections, and edge cases.</p>
+      <p>I'm Dev SaFaNa, a frontend developer with 1 year 3 months of hands-on experience turning designs into interfaces that hold up in the real world — across screen sizes, slow connections, and edge cases.</p>
       <p>I focus on writing clean, maintainable code and closing the gap between a design file and a finished product — matching spacing, motion, and detail so nothing gets lost in the build.</p>
     </div>
     <div class="stat-list reveal">
@@ -142,7 +142,7 @@
     </div>
     <div class="timeline reveal">
       <div class="timeline-item">
-        <span class="period">May 2026 — Present ·3 months</span>
+        <span class="period">Apr 2025 — Present · 1 yr 3 month</span>
         <h3>Frontend Developer</h3>
         <p class="company">Company Name — Remote</p>
         <ul>
@@ -173,7 +173,7 @@
       <div class="review-card reveal">
         <div class="stars">★★★★★</div>
         <p class="quote">Turned our design file into a site that looked exactly right on every device we tested.</p>
-        <div class="reviewer"><div class="avatar">T</div><div><div class="name">Ede Enema.</div><div class="role">Founder, Startup</div></div></div>
+        <div class="reviewer"><div class="avatar">T</div><div><div class="name">Ede Enema</div><div class="role">Founder, Startup</div></div></div>
       </div>
       <div class="review-card reveal">
         <div class="stars">★★★★★</div>
@@ -220,7 +220,7 @@
       </div>
       <div class="editor-body">
         <div class="big-line">Let's<br>work <span class="accent">together</span></div>
-        <div class="terminal-sub"></div>
+        <div class="terminal-sub">/</div>
       </div>
     </div>
   </div>
@@ -245,7 +245,7 @@
     {ln:1, html:'<span class="key">const</span> <span class="var">dev</span> = {'},
     {ln:2, html:'&nbsp;&nbsp;<span class="prop">name</span>: <span class="str">"Dev SaFaNa"</span>,'},
     {ln:3, html:'&nbsp;&nbsp;<span class="prop">role</span>: <span class="str">"Frontend Developer"</span>,'},
-    {ln:4, html:'&nbsp;&nbsp;<span class="prop">experience</span>: <span class="str">"3 months"</span>,'},
+    {ln:4, html:'&nbsp;&nbsp;<span class="prop">experience</span>: <span class="str">"1yr 3mo"</span>,'},
     {ln:5, html:'&nbsp;&nbsp;<span class="prop">focus</span>: <span class="str">"clean UI, fast code"</span>'},
     {ln:6, html:'};'},
     {ln:7, html:'<span class="fn">dev</span>.<span class="fn">buildSomethingGreat</span>();'}
@@ -266,16 +266,8 @@
     container.appendChild(row);
     setTimeout(()=>renderLine(i+1), 220);
   }
-const menuBtn= 
-document.querySelector(".menu-btn");
-const navLinks= 
-document.querySelector(".nav-links");
-menuBtn.addEventListener("click",()=> {
-  navLinks.classList.toggle("active");
-});
- 
 
-if(reduceMotion)
+  if(reduceMotion){
     codeLines.forEach(l=>{
       const row = document.createElement('div');
       row.innerHTML = `<span class="ln">${l.ln}</span>${l.html}`;
@@ -285,7 +277,7 @@ if(reduceMotion)
     renderLine(0);
   }
 
-
+  // scroll reveal
   const revealEls = document.querySelectorAll('.reveal');
   const io = new IntersectionObserver((entries)=>{
     entries.forEach(e=>{
