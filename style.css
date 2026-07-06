@@ -17,6 +17,7 @@
   html{scroll-behavior:smooth;}
 
   body{
+    padding-top: 80px;
     background:var(--bg);
     color:var(--text);
     font-family:'Inter',sans-serif;
@@ -59,6 +60,7 @@
     position:fixed;
     top:0;left:0;right:0;
     z-index:100;
+  position:sticky;
     background:rgba(7,11,16,0.75);
     backdrop-filter:blur(10px);
     border-bottom:1px solid var(--line);
@@ -306,9 +308,10 @@
     color:var(--text-dim);
   }
 
-  @media(max-width:900px){
+  @media(max-width:768px){nav
+  { display: block;
     .cases-grid{grid-template-columns:1fr;}
-  }
+  } }
 
   /* ---------- ABOUT ---------- */
   .about-grid{
