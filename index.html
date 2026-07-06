@@ -21,9 +21,9 @@
         <li><a href="#experience">Experience</a></li>
         <li><a href="#reviews">Reviews</a></li>
       </ul>
+       <div class="menu-btn">&#9776;</div>
     </nav>
     <a href="#contact" class="nav-cta">Say hi →</a>
-    <button class="nav-toggle" aria-label="Open menu">☰</button>
   </div>
 </header>
 
@@ -266,8 +266,16 @@
     container.appendChild(row);
     setTimeout(()=>renderLine(i+1), 220);
   }
+const menuBtn= 
+document.querySelector(".menu-btn");
+const navLinks= 
+document.querySelector(".nav-links");
+menuBtn.addEventListener("click",()=> {
+  navLinks.classList.toggle("active");
+});
+ 
 
-  if(reduceMotion){
+if(reduceMotion)
     codeLines.forEach(l=>{
       const row = document.createElement('div');
       row.innerHTML = `<span class="ln">${l.ln}</span>${l.html}`;
@@ -277,7 +285,7 @@
     renderLine(0);
   }
 
-  // scroll reveal
+
   const revealEls = document.querySelectorAll('.reveal');
   const io = new IntersectionObserver((entries)=>{
     entries.forEach(e=>{

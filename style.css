@@ -101,6 +101,13 @@
   }
   .nav-cta:hover{border-color:var(--gold);background:rgba(232,196,104,0.08);}
   .nav-toggle{display:none;background:none;border:none;color:var(--text);font-size:24px;cursor:pointer;}
+  .nav-link {
+    display:none;
+  }
+  .nav-links.active {
+    display:flex;
+    flex-direction: column;
+  }
 
   @media(max-width:860px){
     nav ul{display:none;}
